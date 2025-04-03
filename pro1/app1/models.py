@@ -3,4 +3,5 @@ from django.db import models
 # Create your models here.
 
 class Student(models.Model):
-    roll = models.IntegerField()
+    roll = models.IntegerField(unique = True)
+    
